@@ -110,10 +110,33 @@
    &__messages {
      height: calc(100vh - 100px - 90px);
      background-color: #fafafa;
+     padding: 35px 40px 0;
    }
 
    &__form {
      height: 90px;
      background-color: #d2d2d2;
    }
+}
+
+.message {
+  padding-bottom: 46px;
+  &__info {
+    margin-bottom: 12px;
+    display: flex;
+    &--name {
+      font-size: 16px;
+      color: #333333;
+    }
+    &--data {
+      font-size: 12px;
+      color: #999999;
+      margin-left: 5px;
+    }
+  }
+
+  &__text {
+   font-size: 14px;
+    color: #434a54;
+  }
 }
