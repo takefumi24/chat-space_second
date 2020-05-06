@@ -19,6 +19,7 @@
   &__groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    padding: 20px 20px 0;
   }
 }
 
@@ -29,6 +30,10 @@
   display: flex;
   justify-content: space-between;
   line-height: 20px;
+  &__name {
+    font-size: 16px;
+    font-weight: bold;
+  }
   &__icon {
     width: 60px;
     text-align: right;
@@ -40,8 +45,26 @@
   }
 }
 
+.group {
+  height: calc(100vh - 100px);
+  &__lists {
+    text-decoration: none;
+    margin-bottom: 40px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    width: 260px;
+    height: 45px;
 
-
+    &--name {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    &--message {
+      font-size: 11px;
+    }
+  }
+}
 
 
 
