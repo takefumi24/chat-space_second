@@ -1,4 +1,11 @@
 .chat-main
   .chat-main__header
+    .chat-main__header__left
+      %p.chat-main__header__left--name
+        test
+      %p.chat-main__header__left--member
+        member:dan
+    =link_to "#", class: "chat-main__header__edit-btn" do
+      Edit
   .chat-main__messages
   .chat-main__form

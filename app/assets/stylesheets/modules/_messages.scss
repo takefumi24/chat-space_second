@@ -79,6 +79,32 @@
      background-color: #ffffff;
      height: 100px;
      border-bottom: 1px solid #eeeeee;
+     padding: 0 40px;
+     display: flex;
+     justify-content: space-between;
+     &__left {
+      margin-top: 35px;
+      &--name {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      &--member {
+        font-size: 12px;
+        color: #999999;
+      }
+     }
+     &__edit-btn {
+        text-decoration: none;
+        font-size: 16px;
+        color: #38aef0;
+        border: 1px solid #38aef0;
+        width: 72px;
+        height: 40px;
+        margin-top: 28px;
+        padding: 0 20px;
+        line-height: 40px;
+     }
    }
 
    &__messages {
