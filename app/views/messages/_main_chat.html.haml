@@ -1,0 +1,33 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__left
+      %p.chat-main__header__left--name
+        test
+      %p.chat-main__header__left--member
+        member:dan
+    =link_to "#", class: "chat-main__header__edit-btn" do
+      Edit
+  .chat-main__messages
+    .message
+      .message__info
+        %p.message__info--name
+          dan
+        %p.message__info--data
+          2020/02/03(Mon)00:00:00
+      .message__text
+        おはよう！！！！
+      .message__info
+        %p.message__info--name
+          dan
+        %p.message__info--data
+          2020/02/03(Mon)00:00:00
+      .message__text
+        おぱダン!!!
+  .chat-main__form
+    %form.new_message
+      .form-box
+        %input.form-box__text{placeholder: "type a message", type: "text"}
+        %label.form-box__image
+          =icon('fas', 'image')
+          %input.form-box__image--file{type: "file"}
+      %input.submit-btn{type: "submit", value: "Send"}
