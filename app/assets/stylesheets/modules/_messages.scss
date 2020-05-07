@@ -28,7 +28,7 @@
   height: 20px;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: $white;
   line-height: 20px;
   &__name {
     font-size: 16px;
@@ -39,7 +39,7 @@
     text-align: right;
     &--btn {
       text-decoration: none;
-      color: #fff;
+      color: $white;
       margin-left: 5px;
     }
   }
@@ -50,7 +50,7 @@
   &__lists {
     text-decoration: none;
     margin-bottom: 40px;
-    color: white;
+    color: $white;
     display: inline-block;
     font-weight: bold;
     width: 260px;
@@ -73,10 +73,10 @@
 
 // main_cahtはここから
 .chat-main {
-  background-color: #ffffff;
+  background-color: $white;
   width: calc(100vw - 300px);
    &__header {
-     background-color: #ffffff;
+     background-color: $white;
      height: 100px;
      border-bottom: 1px solid #eeeeee;
      padding: 0 40px;
@@ -86,19 +86,19 @@
       margin-top: 35px;
       &--name {
         font-size: 20px;
-        color: #333;
+        color: $black;
         margin-bottom: 15px;
       }
       &--member {
         font-size: 12px;
-        color: #999999;
+        color: $gray;
       }
      }
      &__edit-btn {
         text-decoration: none;
         font-size: 16px;
-        color: #38aef0;
-        border: 1px solid #38aef0;
+        color: $skyblue;
+        border: 1px solid $skyblue;
         width: 72px;
         height: 40px;
         margin-top: 28px;
@@ -127,11 +127,11 @@
     display: flex;
     &--name {
       font-size: 16px;
-      color: #333333;
+      color: $black;
     }
     &--data {
       font-size: 12px;
-      color: #999999;
+      color: $gray;
       margin-left: 5px;
     }
   }
@@ -171,8 +171,8 @@ form {
     height: 50px;
     margin-left: 15px;
     padding: 0 30px;
-    background-color: #38aef0;
-    color: white;
+    background-color: $skyblue;
+    color: $white;
     cursor: pointer;
   }
 }
