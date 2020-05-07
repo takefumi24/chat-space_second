@@ -24,3 +24,10 @@
       .message__text
         おぱダン!!!
   .chat-main__form
+    %form.new_message
+      .form-box
+        %input.form-box__text{placeholder: "type a message", type: "text"}
+        %label.form-box__image
+          =icon('fas', 'image')
+          %input.form-box__image--file{type: "file"}
+      %input.submit-btn{type: "submit", value: "Send"}
