@@ -11,7 +11,8 @@
   .chat-side__groups
     .group
       - current_user.groups.each do |group|
-        = link_to "#", class: "group__lists" do
+        = link_to group_messages_path(group), class: "group__lists" do
           %p.group__lists--name
             = group.name
-          %p.group__lists--message ie----i
+          %p.group__lists--message
+            = group.show_last_message

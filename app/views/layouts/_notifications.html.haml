@@ -1,3 +1,7 @@
 .notification
-  - flash.each do |key, value|
+  - flash.each do |key, value| #投稿成功の場合、この時点で、keyに"notice"、valueに"メッセージが送信されました"が入る
     = content_tag :div, value, class: key
+-# content_tagを使用してflashメッセージを表示させるためのdivタグを作成
+-# keyに"notice"、valueに"メッセージが送信されました"が入っているので「classが"notice"」「表示させたい内容が"メッセージが送信されました"」
+-# content_tag(作成するタグの種類△表示したい内容△class等のオプション）
+-# ※△は半角スペース
