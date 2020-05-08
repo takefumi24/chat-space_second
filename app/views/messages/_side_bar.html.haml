@@ -10,6 +10,8 @@
           = icon('fas', 'cog', class: "header-box__icon--btn--cog")
   .chat-side__groups
     .group
-      =link_to "#", class: "group__lists" do
-        %p.group__lists--name test
-        %p.group__lists--message ie----i
+      - current_user.groups.each do |group|
+        = link_to "#", class: "group__lists" do
+          %p.group__lists--name
+            = group.name
+          %p.group__lists--message ie----i
