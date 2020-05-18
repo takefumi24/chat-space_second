@@ -35,9 +35,6 @@ $(function () {
   }
 
 
-
-
-
   $('#new_message').on('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(this);
@@ -46,13 +43,17 @@ $(function () {
       url: url,
       type: "POST",
       data: formData,
-      datatype: 'json',
+      dataType: 'json',
       processData: false,
       contentType: false
     })
       .done(function (data) {
+        console.log(data);
+        console.log(data.user_name);
         const html = buildHtml(data);
-
+        $('.chat-main__messages').append(html);
+        console.log(html);
+        $('form')[0].reset();
     })
   });
 });
